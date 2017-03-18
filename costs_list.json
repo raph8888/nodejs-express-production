@@ -2,15 +2,6 @@
   "categoryName": "Appetizers & Sides",
   "categories": [
     {
-      "categoryID": "294",
-      "parentID": "304",
-      "subjectID": "7",
-      "categoryName": "iPhone 8",
-      "categoryDescription": "Future phone",
-      "videosCount": "€ 600.00",
-      "forumCategoryID": "163"
-    },
-    {
       "categoryID": "285",
       "parentID": "304",
       "subjectID": "7",
