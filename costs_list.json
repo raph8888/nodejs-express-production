@@ -1,0 +1,32 @@
+{
+  "categoryName": "Appetizers & Sides",
+  "categories": [
+    {
+      "categoryID": "294",
+      "parentID": "304",
+      "subjectID": "7",
+      "categoryName": "iPhone 8",
+      "categoryDescription": "Future phone",
+      "videosCount": "€ 600.00",
+      "forumCategoryID": "163"
+    },
+    {
+      "categoryID": "285",
+      "parentID": "304",
+      "subjectID": "7",
+      "categoryName": "Monitor Acer",
+      "categoryDescription": "HD 20 inches",
+      "videosCount": "€ 250.00",
+      "forumCategoryID": "163"
+    },
+    {
+      "categoryID": "337",
+      "parentID": "304",
+      "subjectID": "7",
+      "categoryName": "Rubik's Cube",
+      "categoryDescription": "Side dish recipes with Byron Talbott.",
+      "videosCount": "€ 30.00",
+      "forumCategoryID": "163"
+    }
+  ]
+}

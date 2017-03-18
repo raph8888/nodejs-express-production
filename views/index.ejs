@@ -1,14 +1,32 @@
 <% include layout.ejs %>
 
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4 hidden-xs">
+
+        </div>
+
+
+        <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 20px">
 <h3 style="display: inline">Torn Paper</h3>
 <a href="https://github.com/raphaelsrodrigues/nodejs-express-production/blob/master/views/index.ejs">
   <img src="./images/github-logo-icon-24.png" width="25" style="display: inline; margin-left: 8px; padding-bottom: 8px" target="_blank">
 </a>
   <h4> My experimental CSS on Express, a nodejs framework.</h4>
-  <a href="https://www.instagram.com/ra.ph.p/" style="text-decoration: none !important; color: black !important;"><p> - Raphael S. Rodrigues </p></a>
+  <a href="https://www.instagram.com/ra.ph.p/" style="text-decoration: none !important; color: black !important; float: right"><p> - Raphael S. Rodrigues </p></a>
+        </div>
 
-<br>
-<br>
+
+        <div class="col-md-4 hidden-xs">
+
+        </div>
+
+
+    </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -17,42 +35,34 @@
 
     </div>
 
-    <div class="col-md-4 col-sm-12 col-xs-12 table-container" >
+    <div class="col-md-4 col-sm-12 col-xs-12 table-container">
       <img src="images/torn-paper.png" class="torn-paper-img" width="100%" height="80px">
 
-      <h3>Expenses</h3>
+      <h3 style="padding-left: 20px;">Expenses</h3>
 
       <table class="cost-table">
 
         <thead align="left">
         <tr>
-          <th>Description</th>
+          <th style="padding-left: 20px;">Item</th>
           <th>Value</th>
         </tr>
         </thead>
 
         <tbody>
 
-        <tr class='item_row'>
+            <% costdata.categories.forEach(function(item) { %>
 
-          <td class='item_row'> iPhone 8 </td>
-          <td class='item_row'><p>€600.00 </p></td>
+            <tr class='item_row'>
+                <td class='item_row' style="padding-left: 20px;"><%= item.categoryName %></td>
+                <td class='item_row'><%= item.videosCount %></td>
+            </tr>
 
-        </tr>
-
-        <tr class='item_row'>
-
-          <td class='item_row'> Monitor Acer</td>
-          <td class='item_row'><p>€250.00 </p></td>
-
-        </tr>
-
+            <% }); %>
 
         <tr class="last_item_row">
-
-          <td class="last_item_row"><b>Total</b></td>
-          <td class="last_item_row"><p><b>€850.00</b></p></td>
-
+          <td class="last_item_row" style="padding-left: 20px;"><b>Total</b></td>
+          <td class="last_item_row"><p style="margin: 0px 0 0px !important;"><b>€ 880.00</b></p></td>
         </tr>
 
         </tbody>
@@ -63,11 +73,11 @@
       <div class="include-cost-div">
         <p> Add Item</p>
 
-        <input type="text" name="newcost" id="newcost" placeholder="Description" style="width: 98%;" required>
+        <input type="text" name="newcost" id="newcost" placeholder="Description" style="width: 80%;" required>
         <input type="number" name="newvalue" id="newvalue" placeholder="Value" step="0.01" min="0.01"
-               max="99" style="width: 98%; margin-top: 10px; margin-bottom: 10px" required/>
+               max="99" style="width: 80%; margin-top: 10px; margin-bottom: 10px" required/>
 
-        <input type="submit" name="add" class="add" id="add" value="Add (+)" style="float:right;">
+        <input type="submit" name="add" class="add" id="add" value="Add (+)" style="float:right; margin-right: 26px;">
       </div>
 
       <br>
