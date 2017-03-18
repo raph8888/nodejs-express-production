@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+/*Starts torn paper CSS*/
+
+.cost-table td {
+  border-bottom: 1px solid #81AFDB;
+
+}
+
+.cost-table th {
+  border-bottom: 2px solid #81AFDB;
+  padding-top: 16px;
+}
+
+table.cost-table {
+  border-collapse: collapse;
+}
+
+td.last_item_row {
+  padding-top: .8em;
+}
+
+td.item_row {
+  padding-top: .3em;
+}

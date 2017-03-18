@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<% include layout.ejs %>
+
+<h3>Torn Paper</h3>
+  <h4> My experimental CSS on Express, a nodejs framework.</h4>
+  <p> - Raphael S. Rodrigues </p>
+
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4 hidden-xs">
+
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12" style="border-bottom: 2px solid #81afcd; border-left: 2px solid #81afcd; border-right: 2px solid #81afcd;
+    padding-bottom: 20px;
+    padding-top: 47px;">
+      <img src="images/torn-paper.png" width="100%" height="80px" style="position: absolute;
+    top: -22px;
+    left: 0px;">
+
+      <h3>Expenses</h3>
+
+      <br>
+
+      <table class="cost-table" style="width:100%">
+
+        <thead align="left" style="display: table-header-group">
+        <tr>
+          <th>Description</th>
+          <th>Value</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr class='item_row'>
+
+          <td class='item_row'> iPhone 8 </td>
+          <td class='item_row'><p>€600.00 </p></td>
+
+        </tr>
+
+        <tr class='item_row'>
+
+          <td class='item_row'> Monitor Acer</td>
+          <td class='item_row'><p>€250.00 </p></td>
+
+        </tr>
+
+
+        <tr class="last_item_row">
+
+          <td class="last_item_row"><b>Total</b></td>
+          <td class="last_item_row"><p><b>€850.00</b></p></td>
+
+        </tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+
+      <div class="include-cost-div" style="float:right; width: 33%; padding-top: 20px;">
+        <p> Add Item</p>
+
+        <input type="text" name="newcost" id="newcost" placeholder="Description" style="width: 98%;" required>
+        <input type="number" name="newvalue" id="newvalue" placeholder="Value" step="0.01" min="0.01"
+               max="99" style="width: 98%; margin-top: 10px; margin-bottom: 10px" required/>
+
+        <input type="submit" name="add" class="add" id="add" value="Add (+)" style="float:right;">
+      </div>
+
+      <br>
+      <br>
+
+    </div>
+
+    <div class="col-md-4 hidden-xs"></div>
+
+  </div>
+
+</div>
