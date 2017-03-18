@@ -21,6 +21,11 @@ a {
 
 table.cost-table {
   border-collapse: collapse;
+  width:100%
+}
+
+thead table.cost-table {
+  display: table-header-group;
 }
 
 td.last_item_row {
@@ -29,4 +34,24 @@ td.last_item_row {
 
 td.item_row {
   padding-top: .3em;
+}
+
+.table-container {
+  border-bottom: 2px solid #81afcd;
+  border-left: 2px solid #81afcd;
+  border-right: 2px solid #81afcd;
+  padding-bottom: 20px;
+  padding-top: 47px;
+}
+
+.torn-paper-img {
+  position: absolute;
+  top: -13px;
+  left: 0px;
+}
+
+.include-cost-div {
+  float:right;
+  width: 33%;
+  padding-top: 20px;
 }
