@@ -12,6 +12,15 @@ var portfolio = require('./routes/portfolio');
 
 var app = express();
 
+var ML = require('express-metatag')('tags', true)
+app.use(ML([{
+    'og:title'        : "My Nodejs Express Web App",
+    'og:description'  : 'An Express Framework Project',
+    'og:url'          : 'http://www.raph-web.eu',
+    'og:image'        : '//images/torn-paper-img.png'
+
+}]));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
