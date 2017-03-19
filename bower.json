@@ -1,0 +1,18 @@
+{
+  "name": "expressproject",
+  "description": "",
+  "main": "",
+  "authors": [
+    "raphaelsrodrigues <raph@raph-web.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/raphaelsrodrigues/nodejs-express-production",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
