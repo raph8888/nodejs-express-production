@@ -96,12 +96,15 @@
 <hr>
 
 <h3>Chat System</h3>
-<h4>Simple real time chat system.</h4>
+<h4>Simple real time chat system built with socket.io</h4>
     <p>Talk to me, hopefully I'm around: )</p>
 <form id="form" id="chat_form">
-    <input id="chat_input" type="text">
-    <input type="submit" value="Send">
+    <input id="chat_input" type="text" pattern="[A-Za-z]{3}">
+    <input type="submit" value="Send" pattern="[A-Za-z]{3}">
 </form>
+
+<br>
+
 <div id="future"></div>
 
 <% include templates/footer.ejs %>
