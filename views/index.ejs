@@ -99,7 +99,7 @@
 <h4>Simple real time chat system built with socket.io</h4>
     <p>Talk to me, hopefully I'm around: )</p>
 <form id="form" id="chat_form">
-    <input id="chat_input" type="text" pattern="^[a-zA-Z0-9,.!? ]*$">
+    <input id="chat_input" type="text">
     <input type="submit" value="Send" class="shakeClass">
 </form>
 
@@ -115,7 +115,7 @@
         socket.emit('join', 'Hello World from client');
     });
     socket.on('broad', function(data) {
-        $('#future').html(data);
+        $('#future').html(xssFilters.inHTMLData(data));
     });
     $('form').submit(function(e){
         e.preventDefault();
