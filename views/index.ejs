@@ -93,17 +93,21 @@
     </div>
 </div>
 
-<!--<h3>Hello World!</h3>-->
-<!--<div id="future"></div>-->
-<!--<form id="form" id="chat_form">-->
-    <!--<input id="chat_input" type="text">-->
-    <!--<input type="submit" value="Send">-->
-<!--</form>-->
+<hr>
+
+<h3>Chat System</h3>
+<h4>Simple real time chat system.</h4>
+    <p>Talk to me, hopefully I'm around: )</p>
+<form id="form" id="chat_form">
+    <input id="chat_input" type="text">
+    <input type="submit" value="Send">
+</form>
+<div id="future"></div>
 
 <% include templates/footer.ejs %>
 
 <script>
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://139.162.224.185:3000');
     socket.on('connect', function(data) {
         socket.emit('join', 'Hello World from client');
     });
