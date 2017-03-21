@@ -41,18 +41,14 @@ td.item_row {
   border-bottom: 2px solid #81afcd;
   border-left: 2px solid #81afcd;
   border-right: 2px solid #81afcd;
-  padding-bottom: 20px;
-  padding-top: 47px;
-}
-
-.torn-paper-img {
-  position: absolute;
-  top: -13px;
-  left: 0px;
 }
 
 .include-cost-div {
-  float:right;
+  margin-left: 20px;
   width: 33%;
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+.torn-paper-img {
+  margin-top: -13px;
 }

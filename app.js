@@ -12,7 +12,6 @@ var contact = require('./routes/contact');
 var portfolio = require('./routes/portfolio');
 var users = require('./routes/users');
 var event_management = require('./routes/event_management');
-var chat = require('./routes/chat');
 
 var app = express();
 
@@ -43,7 +42,6 @@ app.use('/contact', contact);
 app.use('/portfolio', portfolio);
 app.use('/users', users);
 app.use('/event_management', event_management);
-app.use('/chat', chat);
 
 app.use(express.static(__dirname + '/bower_components'));
 app.get('/', function(req, res,next) {

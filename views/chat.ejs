@@ -1,23 +1,33 @@
-<% include templates/header.ejs %>
+<div style="margin-left: 30px;">
 
-<h3>Hello World!</h3>
-<div id="future"></div>
-<form id="form" id="chat_form">
-    <input id="chat_input" type="text" pattern="^[a-zA-Z0-9,.!? ]*$">
-    <input type="submit" value="Send">
-</form>
+    <h3 style="display: inline">Chat System</h3>
 
-<% include templates/footer.ejs %>
+    <a href="https://github.com/raphaelsrodrigues/nodejs-express-production/blob/master/views/index.ejs">
+        <img class="shakeClass" src="./images/github-logo-icon-24.png" width="22"
+             style="display: inline; margin-left: 8px; padding-bottom: 8px">
+    </a>
+
+    <h4>Real time chat system built with socket.io</h4>
+    <form id="form" id="chat_form">
+        <input id="chat_input" type="text">
+        <input type="submit" value="Send">
+    </form>
+
+    <br>
+
+    <div id="display_chat"></div>
+
+</div>
 
 <script>
     var socket = io.connect('http://139.162.224.185:3000');
-    socket.on('connect', function(data) {
+    socket.on('connect', function (data) {
         socket.emit('join', 'Hello World from client');
     });
-    socket.on('broad', function(data) {
-        $('#future').html(xssFilters.inHTMLData(data));
+    socket.on('broad', function (data) {
+        $('#display_chat').html(xssFilters.inHTMLData(data));
     });
-    $('form').submit(function(e){
+    $('form').submit(function (e) {
         e.preventDefault();
         var message = $('#chat_input').val();
         socket.emit('messages', message);
