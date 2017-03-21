@@ -2,7 +2,7 @@
 
     <h3 style="display: inline">Chat System</h3>
 
-    <a href="https://github.com/raphaelsrodrigues/nodejs-express-production/blob/master/views/index.ejs">
+    <a href="https://github.com/raphaelsrodrigues/nodejs-express-production/blob/master/views/chat.ejs">
         <img class="shakeClass" src="./images/github-logo-icon-24.png" width="22"
              style="display: inline; margin-left: 8px; padding-bottom: 8px">
     </a>
@@ -20,7 +20,7 @@
 </div>
 
 <script>
-    var socket = io.connect('http://139.162.224.185:3000');
+    var socket = io.connect('http://139.162.224.185:3001');
     socket.on('connect', function (data) {
         socket.emit('join', 'Hello World from client');
     });
