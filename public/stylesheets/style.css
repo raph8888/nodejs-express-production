@@ -16,7 +16,8 @@ a {
 
 .cost-table th {
   border-bottom: 2px solid #81AFDB;
-  padding-top: 16px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 table.cost-table {
@@ -41,6 +42,7 @@ td.item_row {
   border-bottom: 2px solid #81afcd;
   border-left: 2px solid #81afcd;
   border-right: 2px solid #81afcd;
+  box-shadow: 8px 8px 8px #9CA8B7;
 }
 
 .include-cost-div {
