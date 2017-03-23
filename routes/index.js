@@ -5,7 +5,7 @@ var cd = require('../costs_list.json');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'Express',
+    title: 'raph-web.eu',
       costdata: cd
   });
 });
